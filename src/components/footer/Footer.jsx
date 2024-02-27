@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="col">
                 <h3>Company</h3>
                 <p>About</p>
-                <p>Fluffy</p>
+                <p>About</p>
                 <p>Company</p>
                 <p>Company</p>
             </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                 <h3>Details</h3>
                 <p>Company</p>
                 <p>Details</p>
-                <p>Fluffy</p>
+                <p>Details</p>
                 <p>About</p>
             </div>
         </div>
