@@ -76,3 +76,115 @@
 .right-img-details{
     margin-top: -10rem;
 }
+
+
+
+
+
+
+
+
+
+/* Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .featured .container {
+        --num-cols: 1; /* Change to 1 column */
+        --row-height: auto; /* Adjust row height */
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(1, 1fr); /* Change to single column layout */
+    }
+}
+
+/* Medium devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .featured .container {
+        --num-cols: 2; /* Change to 2 columns */
+    }
+}
+
+/* Large devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .featured .container {
+        --num-cols: 3; /* Change to 3 columns */
+    }
+}
+
+/* Extra large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .featured .container {
+        --num-cols: 4; /* Change to 4 columns */
+    }
+}
+
+/* Extra extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .featured .container {
+        --num-cols: 5; /* Revert to original 5 columns */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adjustments for small screens */
+@media screen and (max-width: 767.98px) {
+    .container {
+        grid-template-columns: 1fr; /* Change to single column layout */
+    }
+
+    .container img,
+    .left-img-details,
+    .right-img-details {
+        width: 100%; /* Make elements full width */
+        margin-bottom: 20px; /* Add spacing between elements */
+    }
+
+    .left-img-details,
+    .right-img-details {
+        margin-top: -20px; /* Adjust margin to align properly */
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+    }
+}
+
+
+@media screen and (max-width: 767.98px) {
+    .info-grid {
+        grid-template-columns: repeat(1, 1fr); /* Adjust grid layout */
+    }
+}
+
+
+.info-grid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-grid td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-grid tr:last-child td {
+    border-bottom: none;
+}
+
+.info-grid td:first-child {
+    font-weight: bold;
+}
+
+
+
+

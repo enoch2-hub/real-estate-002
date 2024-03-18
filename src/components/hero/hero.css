@@ -105,7 +105,16 @@
 
 
 @media screen and (max-width: 560px) {
+    .search {
+        width: 22.8rem;
+        margin-left: -1.1rem;
+    }
     .search input[type=text] {
         width: 10rem;
     }
+    .search label {
+        font-size: smaller;
+    }
 }
+
+
